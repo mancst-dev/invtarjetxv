@@ -1,9 +1,16 @@
 :root {
     --pink-light: #fdf2f8;
+    /* --pink-light: rgb(253, 242, 248); */
     --pink-pastel: #f9a8d4;
+    /* --pink-pastel: rgb(249, 168, 212); */
     --pink-medium: #ec4899;
+    /* --pink-medium: rgb(236, 72, 153); */
     --pink-dark: #9d174d;
+    /* --pink-dark: rgb(157, 23, 77); */
     --gold: #d4a574;
+    /* --gold: rgb(212, 165, 116); */
+    --champan: #F7E7CE;
+    /* --champan: rgb(247, 231, 206); */
 }
 body {
     font-family: "Raleway", sans-serif;
@@ -22,6 +29,62 @@ h1,h2,h3 {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* musica bar */
+.player-container {
+    /* background-color: var(--pink-light); */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    color: #f8fafc;
+}
+
+p {
+    margin: 0 0 20px 0;
+    color: #1a1c1f;
+    font-size: 0.9rem;
+}
+
+.progress-area {
+    margin-bottom: 20px;
+}
+
+/* Estilo de la barra de recorrido */
+.progress-bar {
+    width: 100%;
+    cursor: pointer;
+    accent-color: var(--pink-dark); /* Color del indicador en navegadores modernos */
+}
+
+.time-letters {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: #1a1c1f;
+    margin-top: 5px;
+}
+
+/* Botón Inteligente */
+.btn-toggle {
+    background-color: var(--champan);
+    color: #0f172a;
+    border: none;
+    padding: 5px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
+}
+
+.btn-toggle:hover {
+    background-color: #7dd3fc;
+    transform: scale(1.05);
+}
+
 .hero-overlay {
     background: linear-gradient(180deg,
     rgba(253, 242, 248, 0.3) 0%,
