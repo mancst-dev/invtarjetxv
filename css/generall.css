@@ -51,7 +51,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* Estilo de la barra de recorrido */
+/*barra de recorrido */
 .progress-bar {
     width: 100%;
     cursor: pointer;
@@ -66,7 +66,7 @@ p {
     margin-top: 5px;
 }
 
-/* Botón Inteligente */
+/* Botón p/s musica */
 .btn-toggle {
     background-color: var(--champan);
     color: #0f172a;
@@ -81,9 +81,11 @@ p {
 }
 
 .btn-toggle:hover {
-    background-color: #7dd3fc;
+    background-color: var(--pink-medium);
     transform: scale(1.05);
 }
+
+/*  */
 
 .hero-overlay {
     background: linear-gradient(180deg,

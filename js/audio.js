@@ -9,12 +9,12 @@ const tiempoTotal = document.getElementById("tiempoTotal");
 btnPlayPause.addEventListener("click", () => {
   if (audio.paused) {
     audio.play();
-    btnPlayPause.textContent = "⏯";
+    btnPlayPause.textContent = "| |";
     // btnPlayPause.style.backgroundColor = "#f43f5e"; // Cambia a color rosa/rojo al pausar
     btnPlayPause.style.boxShadow = "0 4px 12px rgba(244, 63, 94, 0.3)";
   } else {
     audio.pause();
-    btnPlayPause.textContent = "⏯";
+    btnPlayPause.textContent = "►";
     // btnPlayPause.style.backgroundColor = "#38bdf8"; // Vuelve al azul
     btnPlayPause.style.boxShadow = "0 4px 12px rgba(56, 189, 248, 0.3)";
   }
@@ -54,7 +54,7 @@ function formatearTiempo(segundos) {
 
 // Extra: Si la canción termina, el botón vuelve a decir "Reproducir"
 audio.addEventListener("ended", () => {
-  btnPlayPause.textContent = "⏯";
+  btnPlayPause.textContent = "►";
   // btnPlayPause.style.backgroundColor = "#38bdf8";
   barraProgreso.value = 0;
   tiempoActual.textContent = "0:00";
