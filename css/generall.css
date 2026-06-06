@@ -11,6 +11,9 @@
     /* --gold: rgb(212, 165, 116); */
     --champan: #F7E7CE;
     /* --champan: rgb(247, 231, 206); */
+    /* dorado imq mis xv */
+    /* rgb(158, 123, 86) */
+    --gold-dark: #9e7b56;
 }
 body {
     font-family: "Raleway", sans-serif;
@@ -28,6 +31,41 @@ h1,h2,h3 {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Hero - Header - name */
+.hero-overlay {
+    background: linear-gradient(180deg,
+    rgba(253, 242, 248, 0.3) 0%,
+    rgba(253, 242, 248, 0.85) 60%,
+    rgba(253, 242, 248, 1) 100%
+    );
+}
+header {
+    min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+}
+header h1{
+    color: rgb(158, 123, 86); 
+    font-weight: 500; 
+    font-style: oblique; 
+    font-size: 50px; 
+    letter-spacing: 0.3rem;
+}
+header p.canva-text.leading-relaxed.mb-8{
+    margin-top: 0%; 
+    color: rgb(107, 33, 72); 
+    font-weight: 400; 
+    font-style: normal; 
+    font-size: 16px; 
+    letter-spacing: 0.0rem;
+}
+header p.canva-text.text-lg.mb-10{
+    margin-top: 0%; 
+    color: rgb(158, 123, 86); 
+    font-weight: 500; 
+    font-style: normal; 
+    font-size: 30px; 
+    letter-spacing: 0.2rem;
 }
 
 /* musica bar */
@@ -55,7 +93,7 @@ p {
 .progress-bar {
     width: 100%;
     cursor: pointer;
-    accent-color: var(--pink-dark); /* Color del indicador en navegadores modernos */
+    accent-color: var(--gold); /* Color del indicador en navegadores modernos */
 }
 
 .time-letters {
@@ -68,7 +106,7 @@ p {
 
 /* Botón p/s musica */
 .btn-toggle {
-    background-color: var(--champan);
+    background-color: var(--gold);
     color: #0f172a;
     border: none;
     padding: 5px 20px;
@@ -81,25 +119,47 @@ p {
 }
 
 .btn-toggle:hover {
-    background-color: var(--pink-medium);
+    background-color: var(--gold-dark);
     transform: scale(1.05);
 }
 
-/*  */
+/* tiempo evento */
 
-.hero-overlay {
-    background: linear-gradient(180deg,
-    rgba(253, 242, 248, 0.3) 0%,
-    rgba(253, 242, 248, 0.85) 60%,
-    rgba(253, 242, 248, 1) 100%
-    );
-}
 .time-container {
     /* background-color: var(--pink-light); */
     padding: 25px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
+.time-container .text-center {
+    color: var(--gold-dark); 
+    font-family: 'Playfair Display', serif;
+}
+.time-container .text-center .tracking-wider{
+    color: rgb(107, 33, 72); font-weight: 400; font-style: normal; font-size: 16px;
+}
+
+/* info evento */
+/* title qaleria, cod vestimenta, lluvia sores */
+section.fade-in h2{
+    color: rgb(158, 123, 86); font-weight: 700; font-style: normal; font-size: 24px;
+}
+/* codvestim, lluvia sore*/
+section.fade-in p{
+    color: rgb(107, 33, 72); font-weight: 400; font-style: normal; font-size: 16px;
+}
+/* section.fade-in .color-swatch{
+    color: rgb(107, 33, 72); font-weight: 400; font-style: normal; font-size: 16px;
+} */
+
+/* Formulario */
+
+
+
+/* lluvia sobrs */
+
+
+
 .gallery-scroll {
     display: flex;
     gap: 1rem;
@@ -143,4 +203,12 @@ p {
 }
 .envelope:nth-child(3) {
     animation-delay: 1s;
+}
+.envelope img{
+    padding: 12%;
+    width: 100%;
+}
+/* footer */
+footer p{
+    color: rgb(158, 123, 86); font-weight: 400; font-style: italic; font-size: 16px;
 }
