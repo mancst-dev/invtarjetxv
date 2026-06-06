@@ -94,6 +94,12 @@ p {
     rgba(253, 242, 248, 1) 100%
     );
 }
+.time-container {
+    /* background-color: var(--pink-light); */
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
 .gallery-scroll {
     display: flex;
     gap: 1rem;
