@@ -139,25 +139,25 @@
     </section>
     
     <!-- RSVP Formulario -->
-    <!-- <section class="fade-in py-16 px-6" data-template-id="rsvp-section" id="rsvp-section" style="background: transparent;">
-        <div class="max-w-md mx-auto rounded-3xl p-8 shadow-xl" style="background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);">
-            <h2 data-template-id="rsvp-title" class="canva-text text-center font-bold mb-6" style="color: rgb(157, 23, 77); font-weight: 700; font-style: normal; font-size: 24px;">
+    <section class="fade-in py-16 px-6" data-template-id="rsvp-section" id="rsvp-section" style="background: transparent;">
+        <div class="max-w-md mx-auto rounded-3xl p-8 shadow-xl" id="rsvp-section-container-color">
+            <h2 data-template-id="rsvp-title" class="canva-text text-center font-bold mb-6">
                 Confirma tu Asistencia
             </h2>
             <form id="rsvp-form" class="space-y-4">
                 <div>
-                    <label data-template-id="rsvp-name-label" class="canva-text block text-sm font-medium mb-1" for="guestName" style="color: rgb(107, 33, 72); font-weight: 400; font-style: normal; font-size: 16px;">
-                        Tu nombre
-                    </label> <input id="guestName" type="text" required="" class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300" data-template-id="rsvp-name-input" placeholder="Escribe tu nombre completo" style="background: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">
+                    <label data-template-id="rsvp-name-label" class="canva-text block text-sm font-medium mb-1" for="guestName" >
+                        Nombre Completo *
+                    </label> <input id="guestName" type="text" required="" class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300" data-template-id="rsvp-name-input" placeholder="Escribe tu nombre completo" >
                 </div>
                 <div>
-                    <label data-template-id="rsvp-guests-label" class="canva-text block text-sm font-medium mb-1" for="numGuests" style="color: rgb(107, 33, 72); font-weight: 400; font-style: normal; font-size: 16px;">
-                        Número de acompañantes
+                    <label data-template-id="rsvp-guests-label" class="canva-text block text-sm font-medium mb-1" for="numGuests" >
+                        Número de acompañantes *
                     </label> <input id="numGuests" type="number" min="1" max="10" value="1" class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300">
                 </div>
                 <div>
-                    <label data-template-id="rsvp-attendance-label" class="canva-text block text-sm font-medium mb-1" for="attendance" style="color: rgb(107, 33, 72); font-weight: 400; font-style: normal; font-size: 16px;">
-                        ¿Asistirás?
+                    <label data-template-id="rsvp-attendance-label" class="canva-text block text-sm font-medium mb-1" for="attendance" >
+                        ¿Asistirás? *
                     </label> 
                     <select id="attendance" class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300"> 
                         <option value="yes">Sí, asistiré</option> 
@@ -165,20 +165,35 @@
                     </select>
                 </div>
                 <div>
-                    <label data-template-id="rsvp-message-label" class="canva-text block text-sm font-medium mb-1" for="message" style="color: rgb(107, 33, 72); font-weight: 400; font-style: normal; font-size: 16px;">
+                    <label data-template-id="rsvp-message-label" class="canva-text block text-sm font-medium mb-1" for="message" >
                         Mensaje para Igdalias (opcional)
                     </label> 
                     <textarea id="message" rows="3" class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300"></textarea>
                 </div>
-                <button data-template-id="rsvp-submit" type="submit" class="canva-button w-full py-3 rounded-full font-medium transition hover:opacity-90" style="background: rgb(236, 72, 153); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">
-                    Confirmar 🌸
+                <button data-template-id="rsvp-submit" type="submit" class="canva-button w-full py-3 rounded-full font-medium transition hover:opacity-90" >
+                    Confirmar
                 </button>
             </form>
-            <div id="rsvp-success" class="hidden text-center py-8">
-                <p class="text-4xl mb-4">🌸</p>
-                <p data-template-id="rsvp-success-msg" class="canva-text font-medium" style="color: rgb(157, 23, 77); font-weight: 400; font-style: normal; font-size: 16px;">
-                    ¡Gracias por confirmar! Nos vemos el 4 de julio 💕
+            <div id="rsvp-success" class=" hidden py-8">
+                <p class="text-center text-4xl mb-4">🌸</p>
+                <!-- <p class=" text-4xl mb-4">dd</p> -->
+                <!-- <p data-template-id="rsvp-success-msg" class="canva-text font-medium" >
+                    ¡Gracias por confirmar! Nos vemos el 18 de julio 💕
+                </p> -->
+                <p data-template-id="rsvp-success-msg" class=" text-center canva-text font-medium" >
+                    ¡Gracias por confirmar! 
                 </p>
+                <!-- <p class="text-2xl mb-4">A continuación Inqresa tu correo electronico para recibir el pase de entrada:</p>
+                <form id="rsvp-form-email" class="space-y-4">
+                    <div class="">
+                        <label data-template-id="rsvp-name-label" class="canva-text block text-sm font-medium mb-1" for="emailguestName" >
+                            E-mail
+                        </label> <input id="emailguestName" type="text" required="" class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-300" data-template-id="rsvp-name-input" placeholder="Escribe tu correo electronico" >
+                    </div>
+                    <button data-template-id="rsvp-submit-email" type="submit" class="canva-button w-full py-3 rounded-full font-medium transition hover:opacity-90" >
+                    Recibir entrada
+                </button>
+                </form> -->
             </div>
             <div id="rsvp-error" class="hidden text-center py-4">
                 <p data-template-id="rsvp-error-msg" class="canva-text text-sm" style="color: rgb(220, 38, 38); font-weight: 400; font-style: normal; font-size: 16px;">
@@ -186,7 +201,7 @@
                 </p>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Lluvia de sobres -->
     <section class="fade-in py-16 px-6 text-center">
@@ -216,6 +231,54 @@
     <script src="js/audio.js"></script>
   <!-- <script src="/_sdk/editing_sdk.js"></script>
   <script src="/_sdk/data_sdk.js"></script> -->
+  <script>
+    document.getElementById('rsvp-form').addEventListener('submit', function(e) {
+        e.preventDefault(); // Evita que la página se recargue
+
+        // 1. Obtener los elementos de la interfaz para interactuar
+        const form = document.getElementById('rsvp-form');
+        const successMessage = document.getElementById('rsvp-success');
+        const errorMessage = document.getElementById('rsvp-error');
+        const submitButton = form.querySelector('button[type="submit"]');
+
+        // Deshabilitar el botón de envío temporalmente mientras procesa
+        submitButton.disabled = true;
+        submitButton.innerText = "Enviando Asistencia... ";
+
+        // 2. Mapear los datos de tus inputs actuales
+        const rsvpData = {
+            name: document.getElementById('guestName').value,
+            guests: document.getElementById('numGuests').value,
+            attendance: document.getElementById('attendance').value === 'yes' ? 'Sí' : 'No',
+            message: document.getElementById('message').value
+        };
+
+        // 3. URL de tu implementación de Google Apps Script
+        const scriptUrl = "https://script.google.com/macros/s/AKfycbywjUTz0rsOyCnh0r8mOY81N4-_WkDTItqyCYG1i1y0teE4NcKh-JGTBjGZyspBt-s0/exec";
+
+        // 4. Realizar la petición HTTP POST de manera asíncrona (AJAX / Fetch)
+        fetch(scriptUrl, {
+            method: 'POST',
+            mode: 'no-cors', // Evita problemas de CORS al cruzar dominios
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(rsvpData)
+        })
+        .then(() => {
+            // Debido al modo 'no-cors', asumimos éxito al no disparar catch
+            form.classList.add('hidden');
+            successMessage.classList.remove('hidden');
+            errorMessage.classList.add('hidden');
+        })
+        .catch(error => {
+            console.error('Error al enviar:', error);
+            errorMessage.classList.remove('hidden');
+            submitButton.disabled = false;
+            submitButton.innerText = "Confirmar 🌸";
+        });
+    });
+</script>
   <script>
         // Countdown to July 4, 2026
         const eventDate = new Date('2026-07-18T21:00:00-05:00');

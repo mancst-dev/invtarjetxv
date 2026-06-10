@@ -136,17 +136,26 @@ p {
     font-family: 'Playfair Display', serif;
 }
 .time-container .text-center .tracking-wider{
-    color: rgb(107, 33, 72); font-weight: 400; font-style: normal; font-size: 16px;
+    color: rgb(107, 33, 72); 
+    font-weight: 400; 
+    font-style: normal; 
+    font-size: 16px;
 }
 
 /* info evento */
 /* title qaleria, cod vestimenta, lluvia sores */
 section.fade-in h2{
-    color: rgb(158, 123, 86); font-weight: 700; font-style: normal; font-size: 24px;
+    color: rgb(158, 123, 86); 
+    font-weight: 700; 
+    font-style: normal; 
+    font-size: 24px;
 }
-/* codvestim, lluvia sore*/
+/* codvestimenta, lluvia sore*/
 section.fade-in p{
-    color: rgb(107, 33, 72); font-weight: 400; font-style: normal; font-size: 16px;
+    color: rgb(107, 33, 72); 
+    font-weight: 400; 
+    font-style: normal; 
+    font-size: 16px;
 }
 /* section.fade-in .color-swatch{
     color: rgb(107, 33, 72); font-weight: 400; font-style: normal; font-size: 16px;
@@ -154,8 +163,52 @@ section.fade-in p{
 
 /* Formulario */
 
+#rsvp-section{
+    background: transparent;
+}
+#rsvp-section #rsvp-section-container-color{
+    background: rgba(255,255,255,0.9); 
+    backdrop-filter: blur(10px);
+}
+/* #rsvp-section #rsvp-section-container-color h2{
+    color: rgb(157, 23, 77); font-weight: 700; font-style: normal; font-size: 24px;
+} */
+#rsvp-form div label {
+    color: rgb(107, 33, 72); 
+    font-weight: 400; 
+    font-style: normal; 
+    font-size: 16px;
+}
 
+#rsvp-form div input{
+    background: rgb(255, 255, 255); 
+    font-weight: 400; 
+    font-style: normal; 
+    font-size: 16px;
+}
 
+#rsvp-form button{
+    background: var(--gold); 
+    color: rgb(255, 255, 255); 
+    font-weight: 600; 
+    font-style: normal; 
+    font-size: 16px;
+}
+
+#rsvp-form-email div label{
+    color: rgb(107, 33, 72); 
+    font-weight: 400; 
+    font-style: normal; 
+    font-size: 16px;
+}
+
+#rsvp-form-email button{
+    background: var(--gold); 
+    color: rgb(255, 255, 255); 
+    font-weight: 600; 
+    font-style: normal; 
+    font-size: 16px;
+}
 /* lluvia sobrs */
 
 
@@ -210,5 +263,8 @@ section.fade-in p{
 }
 /* footer */
 footer p{
-    color: rgb(158, 123, 86); font-weight: 400; font-style: italic; font-size: 16px;
+    color: rgb(158, 123, 86); 
+    font-weight: 400; 
+    font-style: italic; 
+    font-size: 16px;
 }
